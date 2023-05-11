@@ -1344,7 +1344,6 @@ main {
 
 .slide__wrapper {
   display: flex;
-  flex-shrink: 0;
   border: 2px solid transparent; }
 
 .slider__button {
@@ -1352,7 +1351,7 @@ main {
   font-size: 16px;
   font-weight: medium;
   letter-spacing: -0.6px;
-  color: #343434d4;
+  color: #7e7e82;
   border: none;
   background: none;
   padding: 8px 16px; }
@@ -1388,7 +1387,8 @@ main {
   font-size: 14px;
   font-weight: 100;
   line-height: 18px;
-  letter-spacing: 0.200000003px; }
+  letter-spacing: 0.200000003px;
+  color: #1b1c21; }
 
 .text {
   overflow: hidden; }
@@ -1701,7 +1701,6 @@ main {
     height: 20px; } }
 
 .taxes-text {
-  max-width: 434px;
   font-family: "TT Lakes";
   font-size: 14px;
   font-weight: 100;
@@ -1713,10 +1712,16 @@ main {
   .taxes-text {
     padding: 10px 0 16px 32px; } }
 
+@media (min-width: 320px) {
+  .taxes-text {
+    max-width: 288px; } }
+
+@media (min-width: 768px) {
+  .taxes-text {
+    max-width: 421px; } }
+
 .commerce_button {
-  width: 192px;
-  height: 55px;
-  padding-left: 16px; }
+  padding: 0 16px 47px 16px; }
   .commerce_button button {
     padding: 0;
     text-align: start;
@@ -1727,9 +1732,13 @@ main {
     font-family: "TT Lakes";
     font-size: 16px;
     font-weight: 500;
-    line-height: 11px;
+    line-height: 24px;
     letter-spacing: 0.24px;
     white-space: nowrap; }
+
+@media (min-width: 320px) {
+  .commerce_button button {
+    white-space: normal; } }
 
 @media (min-width: 1440px) {
   .commerce_button {
