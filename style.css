@@ -129,7 +129,7 @@
   .menu-header__item {
     width: 220px;
     margin-left: -4px;
-    padding: 10px 0; }
+    padding: 8px 0; }
 
 li .menu-header__btn:hover {
   color: #7e7e82;
@@ -1022,6 +1022,9 @@ img {
     width: 1440px;
     overflow-x: hidden; } }
 
+body {
+  -webkit-text-size-adjust: none; }
+
 main {
   padding: 88px 0 0 0;
   background: #f8f8f8;
@@ -1439,7 +1442,8 @@ main {
   font-weight: 300; }
 
 .show-more__text {
-  margin-left: 10px; }
+  margin-left: 10px;
+  color: #1b1c21; }
 
 .text-description {
   display: block; }
@@ -1722,7 +1726,8 @@ main {
     text-align: start;
     border: none;
     background: none;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #1b1c21; }
 
 @media (min-width: 1440px) {
   .commerce_button {
