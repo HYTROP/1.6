@@ -6,7 +6,7 @@
   left: -100%;
   z-index: 11; }
   .burger__overlay--is-active {
-    left: 0;
+    left: 360px;
     position: fixed;
     transition: 0.6s;
     box-shadow: -2px 0 4px 0 rgba(69, 79, 126, 0.02), 16px 0 52px 0 rgba(14, 24, 80, 0.2); }
@@ -248,6 +248,11 @@ li .menu-header__btn:hover {
   .action__button:last-child img {
     width: 18px;
     height: 16px; }
+
+.action__button:last-child:hover {
+  background-color: #f991b2; }
+  .action__button:last-child:hover :focus {
+    background-color: #f991b2; }
 
 .search_icon {
   width: 40px;
@@ -549,7 +554,6 @@ li .menu-header__btn:hover {
   position: relative;
   opacity: 0;
   z-index: 15;
-  transition: 0.6s;
   visibility: hidden;
   top: 0; }
   .wrapper__modal-call--open {
@@ -681,7 +685,6 @@ li .menu-header__btn:hover {
   position: relative;
   opacity: 0;
   z-index: 15;
-  transition: 0.6s;
   visibility: hidden;
   top: 0; }
   .wrapper__modal-feedback--open {
@@ -1083,16 +1086,39 @@ main {
   .services__icons {
     padding: 0 34px 0 0; } }
 
-.services__icon-text {
+.services__text {
+  position: absolute;
+  left: 0;
+  top: 0;
   justify-content: center;
   vertical-align: middle;
   padding: 9.33px 10px;
   font-family: "TT Lakes";
   font-size: 16px; }
 
-.services__tools,
+.services__text2 {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  justify-content: center;
+  vertical-align: middle;
+  padding: 9.33px 10px;
+  font-family: "TT Lakes";
+  font-size: 16px; }
+
 .services__magnifier {
   padding: 10px;
+  margin: 0 0 0 150px;
+  border: none;
+  background-color: #ff3e79;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer; }
+
+.services__tools {
+  padding: 10px;
+  margin: 0 0 0 150px;
   border: none;
   background-color: #ff3e79;
   width: 40px;
@@ -1174,8 +1200,10 @@ main {
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  padding-right: 12px;
-  justify-content: space-between;
+  background-color: #bcbcbc; }
+
+.swiper-pagination-bullet-active {
+  color: #fff;
   background-color: #bcbcbc; }
 
 .swiper-slide {
@@ -1442,6 +1470,10 @@ main {
   font-size: 16px;
   font-weight: 300; }
 
+@media (min-width: 1440px) {
+  .read-more__button {
+    display: none; } }
+
 .show-more__text {
   margin-left: 10px;
   color: #1b1c21; }
@@ -1503,7 +1535,7 @@ main {
 
 @media (min-width: 1440px) {
   .show-more__button__container {
-    display: block;
+    display: none;
     margin: 0 0 32px 32px; } }
 
 .__btn {
@@ -1701,24 +1733,22 @@ main {
     height: 20px; } }
 
 .taxes-text {
+  display: flex;
   font-family: "TT Lakes";
   font-size: 14px;
   font-weight: 100;
   line-height: 20px;
-  letter-spacing: 0.24px;
+  letter-spacing: 0.2px;
+  color: #1b1c21;
   padding: 24px 0 16px 16px; }
 
 @media (min-width: 1440px) {
   .taxes-text {
     padding: 10px 0 16px 32px; } }
 
-@media (min-width: 320px) {
-  .taxes-text {
-    max-width: 288px; } }
-
 @media (min-width: 768px) {
   .taxes-text {
-    max-width: 421px; } }
+    max-width: 451px; } }
 
 .commerce_button {
   padding: 0 16px 47px 16px; }
