@@ -1403,7 +1403,7 @@ main {
 
 .main-description {
   display: block;
-  background: #f8f8f8; }
+  margin-bottom: 24px; }
 
 @media (min-width: 768px) {
   .main-description {
@@ -1499,6 +1499,7 @@ main {
   background: linear-gradient(to left, #f8f8f8 40%, #ffffff 80%); }
 
 .title__container {
+  width: 98%;
   background: linear-gradient(to right, #f8f8f8, #ffffff); }
 
 .repair-header__text {
@@ -1514,8 +1515,7 @@ main {
   text-transform: uppercase;
   text-align: left;
   vertical-align: top;
-  letter-spacing: -0.2px;
-  background: linear-gradient(#f8f8f8 98%, #ffffff 1%); }
+  letter-spacing: -0.2px; }
 
 @media (min-width: 1440px) {
   .repair-header__text {
